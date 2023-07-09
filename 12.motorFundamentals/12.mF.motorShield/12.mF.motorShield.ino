@@ -1,51 +1,64 @@
 /*
   Author: 
-  Learning Intention: The students will learn how to connect and control a continuous 360-degree servo.
+  Learning Intention: The students will learn how to wire two motors to an H-Bridge controller and control the motor's speed and direction.
   Success Criteria:
-    1. I understand how to power the Servo externally from the Arduino
-    2. I understand the benefits of powering a motor externally
-    2. I can manually write different directions and speeds to two servos
+    1. I understand what an H-Bridge is and what it does
+    2. I can fit the shield correctly to the Arduino
+    2. I can manually write different directions and speeds to two motors
     3. I understand the advantages and disadvantages of a continuous servo over a motor and H bridge
+    4. Understand the importance of only connecting an external battery when the Arduino is disconnected from the computer
 
   Student Notes: 
 
   Documentation: 
-    https://github.com/arduino-libraries/Servo <-- We are still using this library
+    https://docs.arduino.cc/tutorials/motor-shield-rev3/msr3-controlling-dc-motor
 
   Schematic:
-    https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/12.motorFundamentals/12.mF.continuousServoMotor/Bootcamp-continuousServoMotor.png
+    https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/12.motorFundamentals/12.mF.motorShield/12.mF.motorShield.png
 */
 
-#include <Servo.h>
+int leftDirectionPin = 12;
+int leftSpeedPin = 3;
+int leftBrakePin = 9;
 
-Servo leftMotor;  // create servo object to control the left continuous servo
-Servo rightMotor;  // create servo object to control the right continuous servo
+int rightDirectionPin = 13;
+int rightSpeedPin = 11;
+int rightBrakePin = 8;
+
+bool directionState = false;
 
 void setup() {
-    // Associate the control pin with each motor
-  leftMotor.attach(2);
-  rightMotor.attach(4);
-
-  // Set both servos to stationary.
-  leftMotor.write(90);
-  rightMotor.write(90);
+  //define pins
+  pinMode(leftDirectionPin, OUTPUT);
+  pinMode(leftSpeedPin, OUTPUT);S
+  pinMode(leftBrakePin, OUTPUT);
+  pinMode(rightDirectionPin, OUTPUT);
+  pinMode(rightSpeedPin, OUTPUT);
+  pinMode(rightBrakePin, OUTPUT);
 }
 
 void loop() {
-    // Servo spins forward at full speed for 3 seconds.
-  leftMotor.write(180);
-  rightMotor.write(0);
-  delay(3000);
-  // Servo is stationary for 1 seconds.
-  leftMotor.write(90);
-  rightMotor.write(90);
-  delay(1000);
-  // Servo spins in reverse at full speed for 3 seconds.
-  leftMotor.write(0);
-  rightMotor.write(180);
-  delay(3000);
-  // Servo is stationary for 13 seconds.
-  leftMotor.write(90);
-  rightMotor.write(90);
-  delay(1000);
+  //change direction every loop
+  directionState = !directionState;
+  digitalWrite(leftDirectionPin, directionState);
+  digitalWrite(rightDirectionPin, directionState); //if motors are wired oposing make !directionState
+
+  //release breaks
+  digitalWrite(leftBrakePin, LOW);
+  digitalWrite(rightBrakePin, LOW);
+
+  //set work duty for the motor
+  analogWrite(leftSpeedPin, 30);
+  analogWrite(rightSpeedPin, 30);
+  delay(2000);
+
+  //activate breaks
+  digitalWrite(leftBrakePin, HIGH);
+  digitalWrite(rightBrakePin, HIGH);
+
+  //set work duty for the motor to 0 (off)
+  analogWrite(leftSpeedPin, 0);
+  analogWrite(rightSpeedPin, 0);
+
+  delay(2000);
 }
