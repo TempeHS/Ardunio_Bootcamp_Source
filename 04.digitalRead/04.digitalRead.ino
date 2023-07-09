@@ -15,6 +15,7 @@
   Documentation: 
     https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/
     https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/
+    https://docs.arduino.cc/built-in-examples/digital/Debounce
   Schematic:
     https://www.tinkercad.com/things/kSX9CqedYeX?sharecode=eYYWDcM8F9OS2TUEujdDsoekSHmj3-VeZ9YSi0uWTYI
     https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/04.digitalRead/Bootcamp-digitalRead.png
