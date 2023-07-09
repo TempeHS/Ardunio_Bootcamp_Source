@@ -10,6 +10,7 @@
   Student Notes: 
 
   Documentation: 
+    https://www.sparkfun.com/servos
     https://github.com/arduino-libraries/Servo <-- We are still using this library
 
   Schematic:
