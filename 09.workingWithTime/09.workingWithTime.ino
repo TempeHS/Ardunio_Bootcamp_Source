@@ -4,8 +4,22 @@
     1. I understand why delay(1000) whilst easy is not the preferred way of time event management
     2. I can use the millis() method and binary logic to trigger events by time
     3. I can explain the difference and benefits in serial monitor plotting by using millis() compared to delay()
+    4. I understand how time can be used to send a communication frequency by using micros()
 
   Student Notes: 
+  Comparison Operators
+    - != (not equal to)
+    - < (less than)
+    - <= (less than or equal to)
+    - == (equal to)
+    - > (greater than)
+    - >= (greater than or equal to)
+
+    Boolean Operators
+    - ! (logical not)
+    - && (logical and)
+    - || (logical or)
+
 
   Documentation: 
     https://www.arduino.cc/reference/en/#functions
@@ -68,3 +82,31 @@ void loop() {
   Serial.print("greenLED:");
   Serial.println(greenLEDState);
 }
+
+/*
+
+static unsigned int greenLED = 2;
+unsigned int greenLEDState = LOW;
+unsigned long greenLEDPreviousMicros = 0; 
+const unsigned long greenLEDinterval = 50; //50htz frequency
+
+void setup() {
+  Serial.begin(57600);
+  pinMode(greenLED, OUTPUT);
+}
+
+void loop() {
+
+  unsigned long currentMicros = micros();
+
+    if (currentMicros - greenLEDPreviousMicros >= greenLEDinterval) {
+      greenLEDPreviousMicros = currentMicros;
+      greenLEDState = !greenLEDState;
+      digitalWrite(greenLED, greenLEDState);
+    }
+  Serial.print("greenLED:");
+  Serial.println(greenLEDState);
+}
+
+*/
+
