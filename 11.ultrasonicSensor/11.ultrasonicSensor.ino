@@ -7,6 +7,7 @@
     3. I generally understand what a library is
     4. I can get a distance from a untra sensor
     4. I understand that a continuous servo speed and direction is set by a frequency signal sent from the microcontroller
+    5. I can apply this knowledge to the Ultrasonic Sensor in the sensor kit
 
   Student Notes: 
 
