@@ -1,6 +1,6 @@
 /*
   Author: 
-  Learning Intention: The students will learn basic math and arithmetic operations
+  Learning Intention: The students will learn basic math and arithmetic operations in C++
     1. I know the arithmetic operation symbols %, *, +, -, / & =
     2. I can perform arithmetic calculations
     3. I know how to access more information in the documentation about math and arithmetic

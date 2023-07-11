@@ -1,6 +1,6 @@
 /*
   Author: 
-  Learning Intention: The students will learn basic math and arithmetic operations
+  Learning Intention: The students will learn to break their code into reusable chunks called functions
     1. I understand how a function is called
     2. I can break a simple program like LED blick into functions that I can be re-use
     3. I know the computation term 'abstraction.'

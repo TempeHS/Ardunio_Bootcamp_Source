@@ -1,6 +1,6 @@
 /*
   Author: 
-   Learning Intention: The students understand how time is used in microcontrollers and best practices
+   Learning Intention: The students understand binary logic and apply it to a range of control structures.
     1. I understand Binary Logic is asking questions that only have a true and false outcome
     2. I can apply different comparison operators to get a desired outcome in a basic if else control structure 
     3. I understand 'if', 'if else', and 'if else if else'
