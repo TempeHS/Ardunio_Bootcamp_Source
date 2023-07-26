@@ -5,9 +5,8 @@
     1. I understand the different behaviours of the setup and loop methods
     2. I can print information to the serial monitor
     3. I can print information to a new line of the serial monitor
-    4. I can access the serial plotter to see data output over time
-    5. I understand the impact of having more than one setup or loop methods in my sketch
-    6. I understand `//` and `\/* *\/` comments 
+    4. I understand the impact of having more than one setup or loop methods in my sketch
+    5. I understand `//` and `\/* *\/` comments 
   
   Student Notes: 
 
