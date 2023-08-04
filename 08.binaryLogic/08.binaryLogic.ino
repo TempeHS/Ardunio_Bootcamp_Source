@@ -1,12 +1,18 @@
 /*
   Author: 
-   Learning Intention: The students understand binary logic and apply it to a range of control structures.
-    1. I understand Binary Logic is asking questions that only have a true and false outcome
-    2. I can apply different comparison operators to get a desired outcome in a basic if else control structure 
-    3. I understand 'if', 'if else', and 'if else if else'
-    4. I understand the differenvce between a 'nested if', and using boolean operators
-    5. I can read a simple logic flowchart
-    6. I know how to find teh documentation for advanced control structures like 'for', 'do while', 'while', and 'switch case'
+
+  Learning Intention:
+  The students understand binary logic and apply it to a range of control structures.
+  
+  Success Criteria:
+    1.  I understand Binary Logic is asking questions that only have a true and false outcome
+    2.  I can apply different comparison operators to get a desired outcome in a basic if else
+        control structure 
+    3.  I understand 'if', 'if else', and 'if else if else'
+    4.  I understand the difference between a 'nested if', and using boolean operators
+    5.  I can read a simple logic flowchart
+    6.  I know how to find the documentation for advanced control structures like 'for',
+        'do while', 'while', and 'switch case'
 
   Student Notes: 
   Comparison Operators

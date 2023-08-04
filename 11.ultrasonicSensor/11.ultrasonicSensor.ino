@@ -1,13 +1,16 @@
 /*
   Author: 
-  Learning Intention: The students will learn how to wire a four pin ultrasonic sensor and configure it to measure distance using a library.
+  
+  Learning Intention:
+  The students will learn how to wire a four pin ultrasonic sensor and configure it to measure distance using a library.
+  
   Success Criteria:
-    1. I can correctly wire a 4 pin ultrasonic sensor
-    2. I understand what the trigger and echo pins do
-    3. I generally understand what a library is
-    4. I can get a distance from a untra sensor
-    4. I understand that a continuous servo speed and direction is set by a frequency signal sent from the microcontroller
-    5. I can apply this knowledge to the Ultrasonic Sensor in the sensor kit
+    1.  I can correctly wire a 4 pin ultrasonic sensor
+    2.  I understand what the trigger and echo pins do
+    3.  I generally understand what a library is
+    4.  I can get a distance from a untra sensor
+    5.  I understand that a continuous servo speed and direction is set by a frequency signal sent from the microcontroller
+    6.  I can apply this knowledge to the Ultrasonic Sensor in the sensor kit
 
   Student Notes: 
 
