@@ -25,7 +25,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("Serial monitor is configured to 9600 baud rate");
   Serial.println("-------------------------------------");
-  // Print out the stired values
+  // Print out the stored values
   Serial.print("Data stored: ");
   Serial.println(myString);
   // Serial.println(myInt);
