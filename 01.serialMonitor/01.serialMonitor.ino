@@ -37,5 +37,15 @@ void loop() {
   while(!Serial.available());
   String myString = Serial.readString();
   Serial.println(myString);
+
+  Serial.print("Pin-A0:");
+  Serial.print(analogRead(A0));
+  Serial.print(",");
+  Serial.print("Pin-A1:");
+  Serial.print(analogRead(A1));
+  Serial.print(",");
+  Serial.print("Pin-A2:");
+  Serial.println(analogRead(A2));
+
   */
 
