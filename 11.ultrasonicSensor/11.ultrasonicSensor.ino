@@ -23,25 +23,19 @@
     https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/11.ultrasonicSensor/Bootcamp-ultrasonicSensor.png
 */
 
-#include <Ultrasonic.h>
+#include "Ultrasonic.h"
 
-/*
-  Pass as a parameter the trigger and echo pin, respectively,
-  or only the signal pin (for sensors 3 pins), like:
-  Ultrasonic ultrasonic(13);
- */
-Ultrasonic ultrasonic(12, 13);
-int distance;
-
-void setup() {
-  Serial.begin(9600);
+Ultrasonic myUltrasonicSensor(5);
+void setup()
+{
+ Serial.begin(9600);
 }
+void loop()
+{
+  long RangeInCentimeters;
 
-void loop() {
-  // Pass INC as a parameter to get the distance in inches
-  distance = ultrasonic.read();
-  
-  Serial.print("Distance in CM: ");
-  Serial.println(distance);
-  delay(1000);
+  RangeInCentimeters = myUltrasonicSensor.MeasureInCentimeters(); // two measurements should keep an interval
+  Serial.print(RangeInCentimeters);//0~400cm
+  Serial.println(" cm");
+  delay(250);
 }
