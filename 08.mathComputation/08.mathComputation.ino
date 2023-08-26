@@ -36,7 +36,6 @@ int myNumber1 = 3;
 int myNumber2 = 5;
 float myResult = 0;
 
-// The setup function runs once when you press reset or power the board
 void setup() {
   Serial.begin(9600);
   Serial.println("Serial monitor is configured to 9600 baud rate");
@@ -49,7 +48,6 @@ void setup() {
   Serial.println(String(myResult, 3));
 }
 
-// The loop function runs over and over again forever
 void loop() {
 // myResult = myResult + 1;
 // myResult += 1;

@@ -27,7 +27,7 @@ bool LED_PIN_State = HIGH;
 int randomNum09;
 
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
+  // initialize digital pin with built in LED as output.
   pinMode(LED_PIN, OUTPUT);
   // inititise the serial monitor for debugging and output
   Serial.begin(9600); 

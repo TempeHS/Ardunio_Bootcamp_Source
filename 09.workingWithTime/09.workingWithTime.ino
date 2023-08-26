@@ -31,14 +31,12 @@ unsigned long greenLEDPreviousMillis = 0;  // will store last time blueLED was u
 const unsigned long blueLEDinterval = 2000; 
 const unsigned long greenLEDinterval = 9000; 
 
-// The setup function runs once when you press reset or power the board
 void setup() {
   Serial.begin(9600);
   pinMode(blueLED, OUTPUT);
   pinMode(greenLED, OUTPUT);
 }
 
-// The loop function runs over and over again forever
 void loop() {
   // check to see if it's time to blink the LED; that is, if the difference
   // between the current time and last time you blinked the LED is bigger than
