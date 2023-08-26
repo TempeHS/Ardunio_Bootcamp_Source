@@ -10,21 +10,6 @@
     3.  I can explain the difference and benefits in serial monitor plotting by using millis() compared to delay()
     4.  I understand how time can be used to send a communication frequency by using micros()
 
-  Student Notes: 
-  Comparison Operators
-    - != (not equal to)
-    - < (less than)
-    - <= (less than or equal to)
-    - == (equal to)
-    - > (greater than)
-    - >= (greater than or equal to)
-
-    Boolean Operators
-    - ! (logical not)
-    - && (logical and)
-    - || (logical or)
-
-
   Documentation: 
     https://www.arduino.cc/reference/en/#functions
   Schematic: 

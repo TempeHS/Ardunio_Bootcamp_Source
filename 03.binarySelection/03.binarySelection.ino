@@ -1,18 +1,15 @@
-/*
-  Author: 
+/*  Author: 
 
   Learning Intention:
-  The students understand binary logic and apply it to a range of control structures.
+  The students understand binary selection logic and apply it to a simple control structures.
   
   Success Criteria:
-    1.  I understand Binary Logic is asking questions that only have a true and false outcome
+    1.  I understand binary selection is asking questions that only have a true and false outcome
     2.  I can apply different comparison operators to get a desired outcome in a basic if else
         control structure 
     3.  I understand 'if', 'if else', and 'if else if else'
     4.  I understand the difference between a 'nested if', and using boolean operators
     5.  I can read a simple logic flowchart
-    6.  I know how to find the documentation for advanced control structures like 'for',
-        'do while', 'while', and 'switch case'
 
   Student Notes: 
   Comparison Operators
@@ -31,17 +28,20 @@
 
   Documentation: 
     https://www.arduino.cc/reference/en/#structure
-    https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/08.binaryLogic/Readme.md
-    
-  Schematic: 
-    
+    https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/03.binarySelection/Readme.md
+
 */
 
-bool myBoolean = true;
-static unsigned int myInt1 = 3;
-static unsigned int myInt2 = 7; 
+static int OnBoardLED = 13;
+static int LEDonPin8 = 8;
 
 void setup() {
+  Serial.begin(9600);
+  pinMode(OnBoardLED, OUTPUT);
+  pinMode(LEDonPin8, OUTPUT);
+}
+
+void loop() {
   Serial.begin(9600);
   Serial.println("--TRUE or FALSE?--");
   Serial.println("-------------------------------------");
@@ -53,8 +53,18 @@ void setup() {
   Serial.println("=====================================");
 }
 
-// The loop function runs over and over again forever
-void loop() {
-      
-}
+/*
+  int OnBoardLEDValue = 1;
+  int LEDonPin8Value = 0;
 
+  OnBoardLEDValue = !OnBoardLEDValue;
+  LEDonPin8Value = !LEDonPin8Value;
+  Serial.print("OnBoardLED:");
+  Serial.print(OnBoardLEDValue);
+  Serial.print(",");
+  Serial.print("LEDonPIN8:");
+  Serial.println(LEDonPin8Value);
+  digitalWrite(OnBoardLED, OnBoardLEDValue);
+  digitalWrite(LEDonPin8, LEDonPin8Value);
+  delay(1000); // Wait for 1000 millisecond(s)
+*/

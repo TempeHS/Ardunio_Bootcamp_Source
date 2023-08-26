@@ -11,7 +11,6 @@
     3.  I can print information to a new line of the serial monitor
     4.  I understand the impact of having more than one setup or loop methods in my sketch
     5.  I understand `//` and `\/* *\/` comments 
-    6.  I understand that data can be plotted in a graph from the serial monitor
   
   Student Notes: 
 
