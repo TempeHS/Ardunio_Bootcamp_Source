@@ -31,7 +31,7 @@
 
   Documentation: 
     https://www.arduino.cc/reference/en/#structure
-    https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/06.binaryLogic/Readme.md
+    https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/06.loopLogic/Readme.md
     
   Schematic: 
     

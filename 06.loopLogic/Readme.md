@@ -1,6 +1,6 @@
 # LOOP LOGIC CONTROL STRUCTURE FLOWCHARTS
 ## FOR Statement (Count Loop)
-![FOR Statement](https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/08.binaryLogic/for_statement.drawio.png)
+![FOR Statement](https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/06.loopLogic/for_statement.drawio.png)
 
     for (int i = 0; i <= 255; i++) {
         analogWrite(PWMpin, i);
@@ -8,7 +8,7 @@
     }
 
 ## FOR EACH Statement (Count Loop)
-![FOR EACH Statement](https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/08.binaryLogic/foreach_statement.drawio.png)
+![FOR EACH Statement](https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/06.loopLogic/foreach_statement.drawio.png)
 
     int arr[]={1,2,3,4,5};   //array initialization
     Serial.print("The elements are: ");
@@ -19,7 +19,7 @@
     }
 
 ## WHILE Statement (Pre-test Loop)
-![WHILE Statement](https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/08.binaryLogic/while_statement.drawio.png)
+![WHILE Statement](https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/06.loopLogic/while_statement.drawio.png)
 
     int x = 0;
     while (x < 200) {
@@ -30,7 +30,7 @@
 - *If no logic (i.e. an incrementor or a decrementor) is established to escape the loop it will repeat endlessly.*
 
 ## DO WHILE Statement (Post-test Loop)
-![DO WHILE Statement](https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/08.binaryLogic/do_while_statement.drawio.png)
+![DO WHILE Statement](https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/06.loopLogic/do_while_statement.drawio.png)
 
     int x = 0;
     do {

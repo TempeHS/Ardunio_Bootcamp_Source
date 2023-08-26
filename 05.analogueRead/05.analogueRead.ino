@@ -18,7 +18,7 @@
     https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/
   Schematic:
     https://www.tinkercad.com/things/97wMDip2Ata-bootcamp-analogueread/editel
-    https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/05.serialRead/Bootcamp-analoguelRead.png
+    https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/05.analogueRead/Bootcamp-analogueRead.png
 */
 
 static int myVariableResistor = A0;
