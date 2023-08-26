@@ -29,7 +29,7 @@
     https://www.arduino.cc/reference/en/language/functions/math/map/
   Schematic:
       https://www.tinkercad.com/things/ihcHlUXS9Y7?sharecode=bOdn0Sm9OuCJ6qI9GAwdyLsZDEUcecsmUharAUXXRIQ
-      https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/08.mathComputation/Bootcamp-MAP-PotLED.png
+      https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/08.mathComputation/Bootcamp-MAP-PotLED.png
 */
 
 int myNumber1 = 3;

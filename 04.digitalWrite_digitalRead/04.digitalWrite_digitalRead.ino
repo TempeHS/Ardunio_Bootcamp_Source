@@ -29,9 +29,9 @@
     https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/04.digitalWrite_digitalRead/Bootcamp-digitalWrite.png
 */
 
-static int PullUpPIN = 3;
-static int PullDownPIN = 10;
-static int SetupPullDownPIN = 12;
+static unsigned int PullUpPIN = 3;
+static unsigned int PullDownPIN = 10;
+static unsigned int SetupPullDownPIN = 12;
 
 void setup() {
   Serial.begin(9600);

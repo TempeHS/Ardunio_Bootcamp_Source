@@ -21,8 +21,8 @@
     https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/05.analogueRead/Bootcamp-analogueRead.png
 */
 
-static int myVariableResistor = A0;
-int resistorValue;
+static unsigned int myVariableResistor = A0;
+unsigned int resistorValue;
 
 void setup() {
   Serial.begin(9600);

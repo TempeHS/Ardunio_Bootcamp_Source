@@ -17,16 +17,16 @@
     https://docs.arduino.cc/tutorials/motor-shield-rev3/msr3-controlling-dc-motor
 
   Schematic:
-    https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/12.motorFundamentals/12.mF.motorShield/12.mF.motorShield.png
+    https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/12.motorFundamentals/12.mF.motorShield/12.mF.motorShield.png
 */
 
-int leftDirectionPin = 12;
-int leftSpeedPin = 3;
-int leftBrakePin = 9;
+static unsigned int leftDirectionPin = 12;
+static unsigned int leftSpeedPin = 3;
+static unsigned int leftBrakePin = 9;
 
-int rightDirectionPin = 13;
-int rightSpeedPin = 11;
-int rightBrakePin = 8;
+static unsigned int rightDirectionPin = 13;
+static unsigned int rightSpeedPin = 11;
+static unsigned int rightBrakePin = 8;
 
 bool directionState = false;
 

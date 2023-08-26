@@ -19,7 +19,7 @@
 
   Schematic:
     https://www.tinkercad.com/things/hTsjepywCmg?sharecode=X7VwGCzTAYM39hS_s1bzLKdL9PZwyLUDhjnhJQOaCIk
-    https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/12.motorFundamentals/12.mF.continuousServoMotor/Bootcamp-continuousServoMotor.png
+    https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/12.motorFundamentals/12.mF.continuousServoMotor/Bootcamp-continuousServoMotor.png
 */
 
 #include <Servo.h>

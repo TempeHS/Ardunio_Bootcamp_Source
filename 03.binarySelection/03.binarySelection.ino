@@ -32,8 +32,8 @@
 
 */
 
-static int OnBoardLED = 13;
-static int LEDonPin8 = 8;
+static unsigned int OnBoardLED = 13;
+static unsigned int LEDonPin8 = 8;
 
 void setup() {
   Serial.begin(9600);

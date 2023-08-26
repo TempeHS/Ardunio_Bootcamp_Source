@@ -30,7 +30,7 @@
 - *If no logic (i.e. an incrementor or a decrementor) is established to escape the loop it will repeat endlessly.*
 
 ## DO WHILE Statement (Post-test Loop)
-![DO WHILE Statement](https://github.com/TempeHS/TempeHS_Ardunio_Bootcamp/blob/main/06.loopLogic/do_while_statement.drawio.png)
+![DO WHILE Statement](https://github.com/TempeHS/Ardunio_Bootcamp_Source/blob/main/06.loopLogic/do_while_statement.drawio.png)
 
     int x = 0;
     do {

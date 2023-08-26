@@ -2,17 +2,15 @@
   Author: 
 
   Learning Intention:
-  The students understand binary logic and apply it to a range of control structures.
+  The students understand loop logic and apply it to a range of control structures.
   
   Success Criteria:
-    1.  I understand Binary Logic is asking questions that only have a true and false outcome
-    2.  I can apply different comparison operators to get a desired outcome in a basic if else
+    1.  I understand logic Logic is asking questions and based on the true and false answer repeating 
+        or not repeating something
+    2.  I can apply different comparison operators to get a desired outcome in a count and pre-test loop
         control structure 
-    3.  I understand 'if', 'if else', and 'if else if else'
-    4.  I understand the difference between a 'nested if', and using boolean operators
-    5.  I can read a simple logic flowchart
-    6.  I know how to find the documentation for advanced control structures like 'for',
-        'do while', 'while', and 'switch case'
+    3.  I can read a simple logic flowchart
+    4.  I know how to find the documentation for loop logic control structures
 
   Student Notes: 
   Comparison Operators
@@ -43,17 +41,16 @@ static unsigned int myInt2 = 7;
 
 void setup() {
   Serial.begin(9600);
-  Serial.println("--TRUE or FALSE?--");
+  Serial.println("--Keep looping?--");
   Serial.println("-------------------------------------");
-  if (myBoolean) {
-    Serial.println("** It is TRUE! **");
-  } else {
-    Serial.println("** It is FALSE! **");
+  while (myBoolean) {
+    Serial.println("** I'm ging to keep loop! **");
+
   }
-  Serial.println("=====================================");
+
+
 }
 
-// The loop function runs over and over again forever
 void loop() {
       
 }
