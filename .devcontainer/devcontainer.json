@@ -13,7 +13,7 @@
 
   "waitFor": "postCreateCommand",
 
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y --no-install-recommends ca-certificates curl clang cmake ninja-build gdb gdb-multiarch valgrind && curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sudo env BINDIR=/usr/local/bin sh && arduino-cli config init --overwrite && arduino-cli core update-index && arduino-cli core install arduino:avr && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y --no-install-recommends ca-certificates curl clang cmake ninja-build gdb gdb-multiarch valgrind && curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sudo env BINDIR=/usr/local/bin sh && arduino-cli config init --overwrite && arduino-cli core update-index && arduino-cli core install arduino:avr && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* && rm -f .git/hooks/pre-push",
 
   "customizations": {
     "vscode": {
