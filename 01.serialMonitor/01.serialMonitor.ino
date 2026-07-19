@@ -20,7 +20,7 @@
 */
 
 void setup() {
-  Serial.begin(9600);                 // Start talking to the computer at 9600 baud
+  Serial.begin(115200);                 // Start talking to the computer at 115200 baud
   Serial.println("Arduino ready!");   // Prints ONCE per power-on or reset
   Serial.print("This runs ");
   Serial.println("in setup only.");

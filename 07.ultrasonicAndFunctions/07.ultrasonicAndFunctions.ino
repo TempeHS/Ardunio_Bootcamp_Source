@@ -25,7 +25,7 @@ const int BUZZER_PIN = 5;  // Grove Buzzer on D5
 const int LED_PIN = 6;     // Grove LED on D6
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   pinMode(BUZZER_PIN, OUTPUT);
   pinMode(LED_PIN, OUTPUT);
 }

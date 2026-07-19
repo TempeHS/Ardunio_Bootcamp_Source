@@ -12,31 +12,31 @@
     share circuitry with A4 and A5, so leave those analogue ports unused while
     I2C devices are connected.)
 
-  Library setup (once, via the library manager):
-    - "U8g2" by oliver          (drives the OLED, we use the U8x8 text mode)
-    - "Grove Temperature And Humidity Sensor" by Seeed Studio (DHT lib), OR
-      swap readSensor() in functions.ino for your chosen catalogue example.
+  Library setup (once):
+    Open the bridge web interface, go to the Libraries tab, search for
+    "Arduino_SensorKit" and install it. It bundles the drivers for every kit
+    I2C module (OLED via U8g2, Temperature & Humidity, Air Pressure,
+    Accelerometer) behind one include.
 
   Teacher notes:
     - setup() runs the I2C scanner first: expect 0x3C (OLED) and 0x38 (T&H).
     - loop() is the dashboard challenge: live readings on the OLED with a
       threshold alert, structured with functions in functions.ino.
+    - Oled and Environment objects come from Arduino_SensorKit.h.
 */
 
 #include <Wire.h>
-#include <U8x8lib.h>
-#include "DHT.h"
+#include "Arduino_SensorKit.h"
 
-// 0.96 inch OLED in text mode (the sensor kit catalogue example uses this)
-U8X8_SSD1306_128X64_NONAME_HW_I2C oled(U8X8_PIN_NONE);
-
-// Grove Temperature & Humidity (DHT20 on the sensor kit) on I2C
-DHT dht(DHT20);
+// The kit's Temperature & Humidity sensor is the DHT20 (black, I2C, 0x38).
+// This define points the library's Environment object at the I2C driver.
+// Requires Arduino_SensorKit v1.0.10 or newer.
+#define Environment Environment_I2C
 
 const float ALERT_TEMPERATURE = 30.0;   // threshold for the dashboard alert
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Wire.begin();
 
   // --- Experiment 1: scan the bus ---
@@ -51,12 +51,14 @@ void setup() {
   Serial.println("Scan complete.");
 
   // --- Experiment 2: drive the OLED ---
-  oled.begin();
-  oled.setFont(u8x8_font_chroma48medium8_r);
-  oled.setCursor(0, 0);
-  oled.print("TempeHS Bootcamp");   // adapted example: your own text
+  Oled.begin();
+  Oled.setFlipMode(true);                       // rotate to suit the mounting
+  Oled.setFont(u8x8_font_chroma48medium8_r);    // readable 8x8 text font
+  Oled.setCursor(0, 0);
+  Oled.print("TempeHS Bootcamp");               // adapted example: your own text
+  Oled.refreshDisplay();
 
-  dht.begin();
+  Environment.begin();                          // Temperature & Humidity sensor
 }
 
 void loop() {
@@ -65,6 +67,7 @@ void loop() {
   readSensor(&temperature, &humidity);
   updateDisplay(temperature, humidity);
   checkAlert(temperature);
+  Oled.refreshDisplay();                        // push the finished frame
 
   Serial.print(temperature);
   Serial.print(" ");

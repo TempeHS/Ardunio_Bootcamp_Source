@@ -35,7 +35,7 @@ void setup() {
   pinMode(BUTTON_PIN, INPUT);
   pinMode(BUZZER_PIN, OUTPUT);
   pinMode(LED_PIN, OUTPUT);
-  Serial.begin(9600);
+  Serial.begin(115200);
   randomSeed(analogRead(A1));   // seed from unconnected pin noise (A1 is free)
 
   // --- FOR (count loop) ---

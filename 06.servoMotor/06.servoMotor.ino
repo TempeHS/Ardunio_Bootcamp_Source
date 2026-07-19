@@ -8,6 +8,11 @@
     Servo          -> Grove connector to D3 (yellow = signal)
     Potentiometer  -> A0
 
+  Library setup (once):
+    Open the bridge web interface, go to the Libraries tab, search for
+    "Servo" (by Arduino) and install it. That provides the #include <Servo.h>
+    used below.
+
   Teacher notes:
     - Out-of-range demo: myServo.write(200) simply moves to 180: the library
       constrains the value. No error, no smoke.
@@ -38,7 +43,7 @@ void smoothMove(int fromAngle, int toAngle) {
 }
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   myServo.attach(SERVO_PIN);
   myServo.write(90);        // start at the middle
   delay(500);

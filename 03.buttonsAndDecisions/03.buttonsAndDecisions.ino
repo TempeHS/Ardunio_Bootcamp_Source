@@ -24,7 +24,7 @@ void setup() {
   pinMode(LED_PIN, OUTPUT);
   pinMode(BUTTON_PIN, INPUT);
   pinMode(LINE_PIN, INPUT);
-  Serial.begin(9600);
+  Serial.begin(115200);
   randomSeed(analogRead(A1));  // for the pretend sensor below (A1 unconnected)
 }
 

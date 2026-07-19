@@ -30,7 +30,7 @@ String deviceName  = "My Arduino"; // text
 int counter = 30000;               // used by the overflow demo in loop()
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   // Converting every type to String for printing (criterion 4)
   Serial.println("Name: " + deviceName);

@@ -34,7 +34,7 @@ const int LIGHT_MIN = 50;
 const int LIGHT_MAX = 900;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   pinMode(LED_PIN, OUTPUT);
   pinMode(BUZZER_PIN, OUTPUT);
 
