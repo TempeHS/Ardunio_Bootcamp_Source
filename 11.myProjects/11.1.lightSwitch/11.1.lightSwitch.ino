@@ -15,7 +15,7 @@ const int BUTTON_PIN = 4;
 const int POT_PIN = A0;
 const int LED_PIN = 6;
 
-const unsigned long HOLD_TIME = 2000;   // ms the button must be held
+const unsigned long HOLD_TIME = 2000;  // ms the button must be held
 
 bool lightOn = false;
 bool wasPressed = false;
@@ -50,8 +50,8 @@ void loop() {
   if (lightOn) {
     // Pot as a zoned dimmer: 4 brightness zones instead of a smooth fade
     int potValue = analogRead(POT_PIN);
-    int zone = potValue / 256;                    // 0, 1, 2 or 3
-    int brightness = map(zone, 0, 3, 60, 255);    // dim, low, mid, full
+    int zone = potValue / 256;                  // 0, 1, 2 or 3
+    int brightness = map(zone, 0, 3, 60, 255);  // dim, low, mid, full
     analogWrite(LED_PIN, brightness);
   } else {
     analogWrite(LED_PIN, 0);
